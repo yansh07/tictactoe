@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="icon" type="image/png" href="/static/game.ico">
+</head>
+<body>
+     <!-- Nav Bar -->
+    <nav class="navbar position-fixed mt-3 start-50 translate-middle-x rounded-pill custom-navbar">
+      <div class="container-fluid d-flex justify-content-center gap-3 px-4">
+        <button id="reset" type="button" class="btn nav-btn rounded-pill">
+          🔁 Reset
+        </button>
+          <button id="mode" type="button" class="btn nav-btn rounded-pill">
+            <span id="mode-text">🌞 Light</span>
+          </button>
+      </div>
+    </nav>
+
+
+      <div id="table" class="game-container">
+        <div class="game-card">
+          <h2 class="game-title">Hi👋🏻, Welcome to:</h2>
+          <h2 class="game-title">Tic Tac Toe</h2>
+
+          <!-- Game Mode Selection -->
+          <div class="game-modes">
+            <button id="twoPlayer" class="btn btn-outline-primary">👥 Two Player</button>
+            <button id="vsComputer" class="btn btn-outline-warning">🤖 Vs Computer</button>
+          </div>
+
+          <!-- Status Display -->
+          <div class="status-display">
+            <p id="status" class="status-text">Select a game mode to start!</p>
+          </div>
+
+          <!-- Game Grid -->
+          <div class="game-grid">
+            <div class="cell" data-cell="0"></div>
+            <div class="cell" data-cell="1"></div>
+            <div class="cell" data-cell="2"></div>
+            <div class="cell" data-cell="3"></div>
+            <div class="cell" data-cell="4"></div>
+            <div class="cell" data-cell="5"></div>
+            <div class="cell" data-cell="6"></div>
+            <div class="cell" data-cell="7"></div>
+            <div class="cell" data-cell="8"></div>
+          </div>
+        </div>
+      </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
